@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<robot name="goal">
+  <link name="goal_1">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="../meshes/goalsoppo.stl"/>
+      </geometry>
+      <material name="../material/teensize_goal.material">
+        <color rgba="0.917647 0.917647 0.917647 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="../meshes/goalsoppo.stl"/>
+      </geometry>
+      <material name="../material/teensize_goal.material">
+        <color rgba="0.917647 0.917647 0.917647 1.0"/>
+      </material>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+  </link>
+  <joint name="field_1_8_fixing" type="fixed">
+    <origin xyz="0 0 0" rpy="0 -0 0" />
+    <parent link="goal_1" />
+    <child link="field_1_8" />
+    <axis xyz="0 0 1"/>
+    <limit effort="1" velocity="20" />
+    <joint_properties friction="0.0"/>
+  </joint>
+  <link name="field_1_8">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0" />
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="../meshes/goalsoppo-back.stl"/>
+      </geometry>
+      <material name="../material/teensize_goal.material">
+        <color rgba="0.917647 0.917647 0.917647 1.0"/>
+      </material>
+    </visual>
+  </link>
+</robot>
+
+
+
+<!-- <robot name="onshape">
+<link name="field_1">
+
+
+<collision>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://goalsopponent.stl"/>
+</geometry>
+<material name="goalsopponent_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+
+<collision>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://goalsallyback.stl"/>
+</geometry>
+<material name="goalsallyback_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+<collision>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://goalsopponentback.stl"/>
+</geometry>
+<material name="goalsopponentback_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+<visual><geometry><box size="0 0 0" /></geometry></visual>
+</link> -->

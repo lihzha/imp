@@ -1,0 +1,4 @@
+#python3 ase/run.py --task HumanoidAMP --cfg_train ase/data/cfg/train/rlg/amp_humanoid.yaml --motion_file ase/data/motions/heading/amp_humanoid_run.npy --checkpoint /home/lihan/ASE/output/Humanoid_28-00-51-50/nn/Humanoid.pth --num_envs 16 --sim_device cuda:2 --rl_device cuda:2 --test --cfg_env ase/data/cfg/humanoid.yaml
+# python3 ase/run.py --checkpoint /home/lihan/ASE/output/Humanoid_30-00-48-22/nn/Humanoid.pth --sim_device cuda:1 --rl_device cuda:2 --num_envs 16 --test --motion_file ase/data/motions/dribble/dribble.yaml --task HumanoidDribble --cfg_train ase/data/cfg/train/rlg/amp_humanoid_task.yaml  --cfg_env ase/data/cfg/humanoid.yaml
+
+python3 ase/run.py --checkpoint /home/lihan/ASE/output/Humanoid_31-12-05-12/nn/Humanoid.pth --sim_device cuda:0 --rl_device cuda:0 --num_envs 16 --test --motion_file ase/data/motions/dribble/dribble.yaml --task HumanoidDribble --cfg_train ase/data/cfg/train/rlg/amp_humanoid_task.yaml  --cfg_env ase/data/cfg/humanoid.yaml

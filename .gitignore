@@ -1,0 +1,16 @@
+*.pyc
+
+.vs/
+runs/
+__pycache__/
+output/
+log/
+nn/
+0run.sh
+1run.sh
+2run.sh
+3run.sh
+video_dec/
+img.png
+isaacgym/
+images/

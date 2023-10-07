@@ -1,0 +1,2 @@
+# python3 ase/run.py --task HumanoidAMP --cfg_env ase/data/cfg/humanoid.yaml --cfg_train ase/data/cfg/train/rlg/amp_humanoid.yaml --motion_file ase/data/motions/ --headless
+python3 ase/run.py --task HumanoidLocation --cfg_env ase/data/cfg/humanoid.yaml --cfg_train ase/data/cfg/train/rlg/amp_humanoid_task.yaml --motion_file ase/data/motions/dribble/dribble.yaml --sim_device cuda:2 --rl_device cuda:2
